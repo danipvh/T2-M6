@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>API Conductores y Automóviles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Conductores y Automóviles</h1>
+
+<div class="seccion">
+  <h2>Listar datos</h2>
+  <button onclick="getConductores()">Ver Conductores</button>
+  <button onclick="getAutomoviles()">Ver Automóviles</button>
+</div>
+
+<div class="seccion">
+  <h2>Conductores menores sin auto</h2>
+  <input type="number" id="edad" placeholder="Edad máxima">
+  <button onclick="getConductoresSinAuto()">Buscar</button>
+</div>
+
+<div class="seccion">
+  <h2>Solitos</h2>
+  <button onclick="getSolitos()">Ver conductores sin auto y autos sin conductor</button>
+</div>
+
+<div class="seccion">
+  <h2>Buscar auto por patente exacta</h2>
+  <input type="text" id="patente" placeholder="Patente">
+  <button onclick="getAutoPorPatente()">Buscar</button>
+</div>
+
+<div class="seccion">
+  <h2>Buscar autos por inicio de patente</h2>
+  <input type="text" id="inicio" placeholder="Letra inicial">
+  <button onclick="getAutosPorInicio()">Buscar</button>
+</div>
+
+<div class="resultado">
+  <h2>Resultado</h2>
+  <div id="contenedor-tabla">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
