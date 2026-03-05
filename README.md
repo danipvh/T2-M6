@@ -32,6 +32,7 @@ Base de datos PostgreSQL con dos tablas:
 - marca
 - patente
 - nombre_conductor
+  
 Relación entre tablas: automoviles.nombre_conductor = conductores.nombre
 
 ---
